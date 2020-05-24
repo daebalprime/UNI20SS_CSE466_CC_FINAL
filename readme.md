@@ -4,7 +4,7 @@
 
 |  |  |
 |--|--|
-|***Taesu Kim***|email|
+|***Taesu Kim***|start0821@unist.ac.kr|
 |***Hyungchan Ham***|email|
 |***Daeyeon Kim***|daebalprime@gmail.com|
 | | |
