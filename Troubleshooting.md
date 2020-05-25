@@ -24,3 +24,22 @@ remove hadoop data file
 ``` bash
 systemctl stop filewalld
 ```
+## ACCEPTED: waiting for AM container to be allocated, launched and register with RM.
+### error message
+***master:8088/cluster/app/application_####***
+``` log
+User:	root
+Name:	random-text-writer
+Application Type:	MAPREDUCE
+Application Tags:	
+YarnApplicationState:	ACCEPTED: waiting for AM container to be allocated, launched and register with RM.
+Queue:	default
+FinalStatus Reported by AM:	Application has not completed yet.
+Started:	Mon May 25 14:42:45 +0900 2020
+Elapsed:	26sec
+Tracking URL:	ApplicationMaster
+Diagnostics:	
+```
+### Solution
+Resource Manager cannot connect to slave nodes because of UNKNONW HOSTS
+ADDED hostname of slaves node to `/etc/hosts`
