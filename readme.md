@@ -30,3 +30,7 @@
 - ***[Fair Scheduler](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/FairScheduler.html) VS [Capacity Scheduler](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html)***
 - [Shuffle Tuning](https://m.blog.naver.com/PostView.nhn?blogId=pdc222&logNo=220732616451&proxyReferer=https:%2F%2Fwww.google.com%2F)
 - Mapreduce number of task
+
+### Quick links
+- ***[HDFS](http://114.70.14.158:50070/dfshealth.html#tab-overview)
+- ***[Hadoop Status](http://114.70.14.158:50070/dfshealth.html#tab-overview)
