@@ -1,0 +1,170 @@
+20/06/08 23:14:33 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #0: workload=249995980, offset=0, size=22360
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #1: workload=250058520, offset=22360, size=9264
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #2: workload=249893856, offset=31624, size=7104
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #3: workload=250013204, offset=38728, size=5992
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #4: workload=250063440, offset=44720, size=5280
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #5: workload=249988378, offset=50000, size=4772
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #6: workload=249969002, offset=54772, size=4388
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #7: workload=249951010, offset=59160, size=4084
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #8: workload=249963350, offset=63244, size=3836
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #9: workload=250232088, offset=67080, size=3632
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #10: workload=249761052, offset=70712, size=3448
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #11: workload=250174650, offset=74160, size=3300
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #12: workload=250090470, offset=77460, size=3164
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #13: workload=249719280, offset=80624, size=3040
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #14: workload=250295430, offset=83664, size=2940
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #15: workload=249989580, offset=86604, size=2840
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #16: workload=249938016, offset=89444, size=2752
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #17: workload=249918840, offset=92196, size=2672
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #18: workload=250038100, offset=94868, size=2600
+20/06/08 23:14:33 INFO examples.BaileyBorweinPlouffe: Map #19: workload=249995754, offset=97468, size=2532
+20/06/08 23:14:33 INFO mapreduce.JobSubmitter: number of splits:20
+20/06/08 23:14:34 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591625323270_0009
+20/06/08 23:14:34 INFO impl.YarnClientImpl: Submitted application application_1591625323270_0009
+20/06/08 23:14:34 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591625323270_0009/
+20/06/08 23:14:34 INFO mapreduce.Job: Running job: job_1591625323270_0009
+20/06/08 23:14:39 INFO mapreduce.Job: Job job_1591625323270_0009 running in uber mode : false
+20/06/08 23:14:39 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/08 23:14:42 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000001_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:42 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000000_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:43 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000003_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:44 INFO mapreduce.Job:  map 5% reduce 0%
+20/06/08 23:14:44 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000002_0, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:14:45 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000005_0, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:14:46 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/08 23:14:47 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000004_0, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:14:47 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000006_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:47 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000009_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:49 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000007_0, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:14:49 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000001_1, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:14:49 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000008_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:50 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000003_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:50 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000000_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:50 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000010_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:51 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000002_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:53 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000005_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:54 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000012_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:54 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000011_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:56 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000009_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:57 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000004_1, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:14:57 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000013_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:57 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000006_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:57 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000001_2, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:58 INFO mapreduce.Job:  map 5% reduce 0%
+20/06/08 23:14:58 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000007_1, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:14:58 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000008_1, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:14:59 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000003_2, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:59 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000014_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:14:59 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000000_2, Status : FAILED
+Error: Java heap space
+20/06/08 23:15:00 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/08 23:15:00 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000002_2, Status : FAILED
+Error: Java heap space
+20/06/08 23:15:01 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000010_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:15:01 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000005_2, Status : FAILED
+Error: Java heap space
+20/06/08 23:15:03 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000011_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:15:03 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000012_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:15:04 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000015_0, Status : FAILED
+Error: Java heap space
+20/06/08 23:15:05 INFO mapreduce.Job:  map 5% reduce 0%
+20/06/08 23:15:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000016_0, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:15:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000017_0, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:15:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0009_m_000009_2, Status : FAILED
+Error: Java heap space
+20/06/08 23:15:06 INFO mapreduce.Job:  map 100% reduce 100%
+20/06/08 23:15:08 INFO mapreduce.Job: Job job_1591625323270_0009 failed with state FAILED due to: Task failed task_1591625323270_0009_m_000001
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+20/06/08 23:15:08 INFO mapreduce.Job: Counters: 16
+	Job Counters 
+		Failed map tasks=38
+		Killed map tasks=19
+		Killed reduce tasks=1
+		Launched map tasks=50
+		Other local map tasks=50
+		Total time spent by all maps in occupied slots (ms)=272357
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=272357
+		Total time spent by all reduce tasks (ms)=0
+		Total vcore-milliseconds taken by all map tasks=272357
+		Total vcore-milliseconds taken by all reduce tasks=0
+		Total megabyte-milliseconds taken by all map tasks=278893568
+		Total megabyte-milliseconds taken by all reduce tasks=0
+	Map-Reduce Framework
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0

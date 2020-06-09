@@ -1,0 +1,41 @@
+20/06/08 23:19:57 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+20/06/08 23:19:58 INFO input.FileInputFormat: Total input paths to process : 1
+20/06/08 23:19:58 INFO mapreduce.JobSubmitter: number of splits:1
+20/06/08 23:19:58 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591625323270_0017
+20/06/08 23:19:58 INFO impl.YarnClientImpl: Submitted application application_1591625323270_0017
+20/06/08 23:19:58 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591625323270_0017/
+20/06/08 23:19:58 INFO mapreduce.Job: Running job: job_1591625323270_0017
+20/06/08 23:20:03 INFO mapreduce.Job: Job job_1591625323270_0017 running in uber mode : false
+20/06/08 23:20:03 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/08 23:20:06 INFO mapreduce.Job: Task Id : attempt_1591625323270_0017_m_000000_0, Status : FAILED
+Error: Java heap space
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/08 23:20:09 INFO mapreduce.Job: Task Id : attempt_1591625323270_0017_m_000000_1, Status : FAILED
+Error: Java heap space
+20/06/08 23:20:12 INFO mapreduce.Job: Task Id : attempt_1591625323270_0017_m_000000_2, Status : FAILED
+Error: Java heap space
+20/06/08 23:20:16 INFO mapreduce.Job:  map 100% reduce 100%
+20/06/08 23:20:17 INFO mapreduce.Job: Job job_1591625323270_0017 failed with state FAILED due to: Task failed task_1591625323270_0017_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+20/06/08 23:20:17 INFO mapreduce.Job: Counters: 15
+	Job Counters 
+		Failed map tasks=4
+		Killed reduce tasks=1
+		Launched map tasks=4
+		Other local map tasks=4
+		Total time spent by all maps in occupied slots (ms)=6310
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=6310
+		Total time spent by all reduce tasks (ms)=0
+		Total vcore-milliseconds taken by all map tasks=6310
+		Total vcore-milliseconds taken by all reduce tasks=0
+		Total megabyte-milliseconds taken by all map tasks=6461440
+		Total megabyte-milliseconds taken by all reduce tasks=0
+	Map-Reduce Framework
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0

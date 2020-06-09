@@ -1,0 +1,477 @@
+20/06/09 05:24:15 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+20/06/09 05:24:15 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+20/06/09 05:24:16 INFO input.FileInputFormat: Total input paths to process : 10
+20/06/09 05:24:16 INFO mapreduce.JobSubmitter: number of splits:80
+20/06/09 05:24:17 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591646884095_0005
+20/06/09 05:24:17 INFO impl.YarnClientImpl: Submitted application application_1591646884095_0005
+20/06/09 05:24:17 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591646884095_0005/
+20/06/09 05:24:17 INFO mapreduce.Job: Running job: job_1591646884095_0005
+20/06/09 05:24:23 INFO mapreduce.Job: Job job_1591646884095_0005 running in uber mode : false
+20/06/09 05:24:23 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/09 05:24:30 INFO mapreduce.Job:  map 1% reduce 0%
+20/06/09 05:24:33 INFO mapreduce.Job:  map 3% reduce 0%
+20/06/09 05:24:36 INFO mapreduce.Job:  map 4% reduce 0%
+20/06/09 05:24:37 INFO mapreduce.Job:  map 6% reduce 0%
+20/06/09 05:24:38 INFO mapreduce.Job:  map 8% reduce 0%
+20/06/09 05:24:39 INFO mapreduce.Job:  map 14% reduce 0%
+20/06/09 05:24:41 INFO mapreduce.Job:  map 16% reduce 0%
+20/06/09 05:24:42 INFO mapreduce.Job:  map 17% reduce 0%
+20/06/09 05:24:44 INFO mapreduce.Job:  map 19% reduce 0%
+20/06/09 05:24:46 INFO mapreduce.Job:  map 20% reduce 0%
+20/06/09 05:24:48 INFO mapreduce.Job:  map 20% reduce 2%
+20/06/09 05:24:49 INFO mapreduce.Job:  map 22% reduce 2%
+20/06/09 05:24:52 INFO mapreduce.Job:  map 23% reduce 5%
+20/06/09 05:24:54 INFO mapreduce.Job:  map 24% reduce 5%
+20/06/09 05:24:55 INFO mapreduce.Job:  map 26% reduce 5%
+20/06/09 05:24:56 INFO mapreduce.Job:  map 27% reduce 5%
+20/06/09 05:24:57 INFO mapreduce.Job:  map 28% reduce 5%
+20/06/09 05:24:58 INFO mapreduce.Job:  map 29% reduce 5%
+20/06/09 05:24:59 INFO mapreduce.Job:  map 30% reduce 5%
+20/06/09 05:25:01 INFO mapreduce.Job:  map 31% reduce 6%
+20/06/09 05:25:03 INFO mapreduce.Job:  map 33% reduce 6%
+20/06/09 05:25:04 INFO mapreduce.Job:  map 34% reduce 6%
+20/06/09 05:25:05 INFO mapreduce.Job:  map 35% reduce 6%
+20/06/09 05:25:06 INFO mapreduce.Job:  map 36% reduce 6%
+20/06/09 05:25:07 INFO mapreduce.Job:  map 36% reduce 7%
+20/06/09 05:25:09 INFO mapreduce.Job:  map 37% reduce 7%
+20/06/09 05:25:10 INFO mapreduce.Job:  map 37% reduce 8%
+20/06/09 05:25:11 INFO mapreduce.Job:  map 39% reduce 8%
+20/06/09 05:25:13 INFO mapreduce.Job:  map 40% reduce 9%
+20/06/09 05:25:14 INFO mapreduce.Job:  map 41% reduce 9%
+20/06/09 05:25:15 INFO mapreduce.Job:  map 42% reduce 9%
+20/06/09 05:25:16 INFO mapreduce.Job:  map 43% reduce 10%
+20/06/09 05:25:18 INFO mapreduce.Job:  map 44% reduce 10%
+20/06/09 05:25:19 INFO mapreduce.Job:  map 45% reduce 11%
+20/06/09 05:25:19 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000038_0, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1085)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000038_0_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+20/06/09 05:25:21 INFO mapreduce.Job:  map 47% reduce 11%
+20/06/09 05:25:21 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000040_0, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1085)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000040_0_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+20/06/09 05:25:25 INFO mapreduce.Job:  map 50% reduce 100%
+20/06/09 05:25:25 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_r_000001_0, Status : FAILED
+Error: org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError: error in shuffle in fetcher#4
+	at org.apache.hadoop.mapreduce.task.reduce.Shuffle.run(Shuffle.java:134)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:376)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.fs.FSError: java.io.IOException: No space left on device
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.write(RawLocalFileSystem.java:248)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at org.apache.hadoop.fs.FSDataOutputStream$PositionCache.write(FSDataOutputStream.java:58)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.mapreduce.task.reduce.OnDiskMapOutput.shuffle(OnDiskMapOutput.java:108)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.copyMapOutput(Fetcher.java:534)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.copyFromHost(Fetcher.java:333)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.run(Fetcher.java:193)
+Caused by: java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.write(RawLocalFileSystem.java:246)
+	... 7 more
+
+20/06/09 05:25:25 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_r_000000_0, Status : FAILED
+Error: org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError: error in shuffle in OnDiskMerger - Thread to merge on-disk map-outputs
+	at org.apache.hadoop.mapreduce.task.reduce.Shuffle.run(Shuffle.java:134)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:376)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.fs.FSError: java.io.IOException: No space left on device
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.write(RawLocalFileSystem.java:248)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at org.apache.hadoop.fs.FSDataOutputStream$PositionCache.write(FSDataOutputStream.java:58)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.mapred.IFileOutputStream.write(IFileOutputStream.java:88)
+	at org.apache.hadoop.fs.FSDataOutputStream$PositionCache.write(FSDataOutputStream.java:58)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.mapred.IFile$Writer.append(IFile.java:245)
+	at org.apache.hadoop.mapred.Merger.writeFile(Merger.java:210)
+	at org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl$OnDiskMerger.merge(MergeManagerImpl.java:569)
+	at org.apache.hadoop.mapreduce.task.reduce.MergeThread.run(MergeThread.java:94)
+Caused by: java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.write(RawLocalFileSystem.java:246)
+	... 10 more
+
+20/06/09 05:25:25 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_r_000002_0, Status : FAILED
+Error: org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError: error in shuffle in fetcher#1
+	at org.apache.hadoop.mapreduce.task.reduce.Shuffle.run(Shuffle.java:134)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:376)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.fs.FSError: java.io.IOException: No space left on device
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.write(RawLocalFileSystem.java:248)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at org.apache.hadoop.fs.FSDataOutputStream$PositionCache.write(FSDataOutputStream.java:58)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.mapreduce.task.reduce.OnDiskMapOutput.shuffle(OnDiskMapOutput.java:108)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.copyMapOutput(Fetcher.java:534)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.copyFromHost(Fetcher.java:333)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.run(Fetcher.java:193)
+Caused by: java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.write(RawLocalFileSystem.java:246)
+	... 7 more
+
+20/06/09 05:25:25 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000038_1, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$300(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$Buffer.write(MapTask.java:1372)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$Buffer.write(MapTask.java:1349)
+	at java.io.DataOutputStream.writeInt(DataOutputStream.java:198)
+	at org.apache.hadoop.io.BytesWritable.write(BytesWritable.java:186)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableSerializer.serialize(WritableSerialization.java:98)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableSerializer.serialize(WritableSerialization.java:82)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1149)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000038_1_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+20/06/09 05:25:25 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000039_0, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1085)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000039_0_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+20/06/09 05:25:26 INFO mapreduce.Job:  map 47% reduce 0%
+20/06/09 05:25:27 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000040_1, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$300(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$Buffer.write(MapTask.java:1372)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$Buffer.write(MapTask.java:1349)
+	at java.io.DataOutputStream.writeInt(DataOutputStream.java:198)
+	at org.apache.hadoop.io.BytesWritable.write(BytesWritable.java:186)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableSerializer.serialize(WritableSerialization.java:98)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableSerializer.serialize(WritableSerialization.java:82)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1157)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000040_1_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/09 05:25:28 INFO mapreduce.Job:  map 51% reduce 0%
+20/06/09 05:25:29 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000049_0, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$300(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$Buffer.write(MapTask.java:1372)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$Buffer.write(MapTask.java:1349)
+	at java.io.DataOutputStream.writeInt(DataOutputStream.java:198)
+	at org.apache.hadoop.io.BytesWritable.write(BytesWritable.java:186)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableSerializer.serialize(WritableSerialization.java:98)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableSerializer.serialize(WritableSerialization.java:82)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1149)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000049_0_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/09 05:25:30 INFO mapreduce.Job:  map 52% reduce 0%
+20/06/09 05:25:31 INFO mapreduce.Job:  map 54% reduce 0%
+20/06/09 05:25:31 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000040_2, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1085)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000040_2_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+20/06/09 05:25:31 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_r_000000_1, Status : FAILED
+Error: org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError: error in shuffle in fetcher#4
+	at org.apache.hadoop.mapreduce.task.reduce.Shuffle.run(Shuffle.java:134)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:376)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for output/attempt_1591646884095_0005_r_000000_1/map_8.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getInputFileForWrite(YarnOutputFiles.java:213)
+	at org.apache.hadoop.mapreduce.task.reduce.OnDiskMapOutput.<init>(OnDiskMapOutput.java:67)
+	at org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl.reserve(MergeManagerImpl.java:269)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.copyMapOutput(Fetcher.java:511)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.copyFromHost(Fetcher.java:333)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.run(Fetcher.java:193)
+
+20/06/09 05:25:33 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000049_1, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1085)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000049_1_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+20/06/09 05:25:35 INFO mapreduce.Job:  map 55% reduce 0%
+20/06/09 05:25:35 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000049_2, Status : FAILED
+Exception from container-launch.
+Container id: container_1591646884095_0005_01_000067
+Exit code: 1
+Exception message: ln: failed to create symbolic link ‘job.jar’: No space left on device
+
+Stack trace: ExitCodeException exitCode=1: ln: failed to create symbolic link ‘job.jar’: No space left on device
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:585)
+	at org.apache.hadoop.util.Shell.run(Shell.java:482)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:776)
+	at org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor.launchContainer(DefaultContainerExecutor.java:212)
+	at org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.call(ContainerLaunch.java:302)
+	at org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.call(ContainerLaunch.java:82)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Container exited with a non-zero exit code 1
+
+20/06/09 05:25:35 INFO mapreduce.Job: Task Id : attempt_1591646884095_0005_m_000051_0, Status : FAILED
+Error: java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.checkSpillException(MapTask.java:1562)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1085)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at org.apache.hadoop.mapreduce.Mapper.map(Mapper.java:125)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for attempt_1591646884095_0005_m_000051_0_spill_0.out
+	at org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext.getLocalPathForWrite(LocalDirAllocator.java:402)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:150)
+	at org.apache.hadoop.fs.LocalDirAllocator.getLocalPathForWrite(LocalDirAllocator.java:131)
+	at org.apache.hadoop.mapred.YarnOutputFiles.getSpillFileForWrite(YarnOutputFiles.java:159)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1592)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$900(MapTask.java:876)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1532)
+
+20/06/09 05:25:36 INFO mapreduce.Job:  map 100% reduce 100%
+20/06/09 05:25:38 INFO mapreduce.Job: Job job_1591646884095_0005 failed with state FAILED due to: Task failed task_1591646884095_0005_m_000040
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+20/06/09 05:25:38 INFO mapreduce.Job: Counters: 42
+	File System Counters
+		FILE: Number of bytes read=6063702895
+		FILE: Number of bytes written=12131765938
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=6075865602
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=180
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Failed map tasks=11
+		Failed reduce tasks=4
+		Killed map tasks=34
+		Killed reduce tasks=3
+		Launched map tasks=61
+		Launched reduce tasks=7
+		Other local map tasks=8
+		Data-local map tasks=36
+		Rack-local map tasks=17
+		Total time spent by all maps in occupied slots (ms)=673860
+		Total time spent by all reduces in occupied slots (ms)=134692
+		Total time spent by all map tasks (ms)=673860
+		Total time spent by all reduce tasks (ms)=134692
+		Total vcore-milliseconds taken by all map tasks=673860
+		Total vcore-milliseconds taken by all reduce tasks=134692
+		Total megabyte-milliseconds taken by all map tasks=690032640
+		Total megabyte-milliseconds taken by all reduce tasks=137924608
+	Map-Reduce Framework
+		Map input records=576769
+		Map output records=576769
+		Map output bytes=6059870008
+		Map output materialized bytes=6063113224
+		Input split bytes=5085
+		Combine input records=0
+		Spilled Records=1153538
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=8364
+		CPU time spent (ms)=77960
+		Physical memory (bytes) snapshot=12106698752
+		Virtual memory (bytes) snapshot=94928547840
+		Total committed heap usage (bytes)=9189720064
+	File Input Format Counters 
+		Bytes Read=6075860517

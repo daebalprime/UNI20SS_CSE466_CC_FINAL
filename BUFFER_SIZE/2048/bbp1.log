@@ -1,0 +1,9 @@
+Working Directory = bbp_dir
+
+Start Digit      = 1
+Number of Digits = 100000
+Number of Maps   = 20
+
+Starting Job ...
+Duration is 260.133 seconds.
+Output file: hdfs://master:9000/user/root/bbp_dir/pi_1_100000.hex
