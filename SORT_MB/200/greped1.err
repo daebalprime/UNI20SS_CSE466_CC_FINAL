@@ -1,262 +1,240 @@
-20/06/08 23:12:39 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
-20/06/08 23:12:40 INFO input.FileInputFormat: Total input paths to process : 10
-20/06/08 23:12:40 INFO mapreduce.JobSubmitter: number of splits:90
-20/06/08 23:12:40 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591625323270_0006
-20/06/08 23:12:41 INFO impl.YarnClientImpl: Submitted application application_1591625323270_0006
-20/06/08 23:12:41 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591625323270_0006/
-20/06/08 23:12:41 INFO mapreduce.Job: Running job: job_1591625323270_0006
-20/06/08 23:12:45 INFO mapreduce.Job: Job job_1591625323270_0006 running in uber mode : false
-20/06/08 23:12:45 INFO mapreduce.Job:  map 0% reduce 0%
-20/06/08 23:12:53 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000004_0, Status : FAILED
+20/06/10 00:38:08 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+20/06/10 00:38:09 INFO input.FileInputFormat: Total input paths to process : 10
+20/06/10 00:38:09 INFO mapreduce.JobSubmitter: number of splits:90
+20/06/10 00:38:10 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591717024225_0002
+20/06/10 00:38:10 INFO impl.YarnClientImpl: Submitted application application_1591717024225_0002
+20/06/10 00:38:10 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591717024225_0002/
+20/06/10 00:38:10 INFO mapreduce.Job: Running job: job_1591717024225_0002
+20/06/10 00:38:17 INFO mapreduce.Job: Job job_1591717024225_0002 running in uber mode : false
+20/06/10 00:38:17 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/10 00:38:24 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000004_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:25 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000002_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:53 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000005_0, Status : FAILED
+20/06/10 00:38:25 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000001_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:53 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000001_0, Status : FAILED
+20/06/10 00:38:25 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000003_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:54 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000002_0, Status : FAILED
+20/06/10 00:38:25 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000005_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:54 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000003_0, Status : FAILED
+20/06/10 00:38:25 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000000_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:54 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000000_0, Status : FAILED
+20/06/10 00:38:26 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000008_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:54 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000015_0, Status : FAILED
-Error: Java heap space
-20/06/08 23:12:55 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000012_0, Status : FAILED
-Error: Java heap space
-Container killed by the ApplicationMaster.
-Container killed on request. Exit code is 143
-Container exited with a non-zero exit code 143
-
-20/06/08 23:12:55 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000009_0, Status : FAILED
+20/06/10 00:38:27 INFO mapreduce.Job:  map 3% reduce 0%
+20/06/10 00:38:27 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000012_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:55 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000008_0, Status : FAILED
+20/06/10 00:38:27 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000015_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:55 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000013_0, Status : FAILED
+20/06/10 00:38:27 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000013_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:55 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000014_0, Status : FAILED
+20/06/10 00:38:27 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000011_0, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:55 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000011_0, Status : FAILED
+20/06/10 00:38:27 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000009_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:27 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000010_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:27 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000014_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:28 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/10 00:38:29 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000004_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:31 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000002_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:31 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000001_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:31 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000007_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:31 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000016_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:31 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000006_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:31 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000017_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:31 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000018_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:31 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000019_0, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:35 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000003_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:35 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000005_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:37 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000011_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:37 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000009_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:38 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000000_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:38 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000010_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:38 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000008_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:39 INFO mapreduce.Job:  map 1% reduce 0%
+20/06/10 00:38:39 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000012_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:39 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000004_2, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:40 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/10 00:38:40 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000013_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:40 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000015_1, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:40 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000002_2, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:41 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000014_1, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:55 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000010_0, Status : FAILED
+20/06/10 00:38:42 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000001_2, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:57 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000006_0, Status : FAILED
-Error: Java heap space
-20/06/08 23:12:58 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000016_0, Status : FAILED
+20/06/10 00:38:43 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000017_1, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:12:58 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000007_0, Status : FAILED
+20/06/10 00:38:44 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000006_1, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:00 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000002_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:02 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000015_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:03 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000025_0, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:03 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000004_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:05 INFO mapreduce.Job:  map 4% reduce 0%
-20/06/08 23:13:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000001_1, Status : FAILED
+20/06/10 00:38:44 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000007_1, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000024_0, Status : FAILED
+20/06/10 00:38:45 INFO mapreduce.Job:  map 1% reduce 0%
+20/06/10 00:38:45 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000016_1, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000005_1, Status : FAILED
+20/06/10 00:38:45 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000018_1, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000026_0, Status : FAILED
+20/06/10 00:38:45 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000019_1, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000003_1, Status : FAILED
+20/06/10 00:38:45 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000011_2, Status : FAILED
+Error: Java heap space
+20/06/10 00:38:46 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/10 00:38:46 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000003_2, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000000_1, Status : FAILED
+20/06/10 00:38:47 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000000_2, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:05 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000012_1, Status : FAILED
+20/06/10 00:38:47 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000005_2, Status : FAILED
 Error: Java heap space
-20/06/08 23:13:06 INFO mapreduce.Job:  map 0% reduce 0%
-20/06/08 23:13:06 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000008_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:06 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000009_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:06 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000013_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:07 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000014_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:09 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000011_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:11 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000004_2, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:12 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000006_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:13 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000016_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:13 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000001_2, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:13 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000010_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:13 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000027_0, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:13 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000025_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:13 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000024_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:13 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000015_2, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:14 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000007_1, Status : FAILED
+20/06/10 00:38:48 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000008_2, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:14 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000002_2, Status : FAILED
+20/06/10 00:38:49 INFO mapreduce.Job: Task Id : attempt_1591717024225_0002_m_000010_2, Status : FAILED
 Error: Java heap space
 Container killed by the ApplicationMaster.
 Container killed on request. Exit code is 143
 Container exited with a non-zero exit code 143
 
-20/06/08 23:13:14 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000005_2, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:16 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000026_1, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:17 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000003_2, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:18 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000012_2, Status : FAILED
-Error: Java heap space
-Container killed by the ApplicationMaster.
-Container killed on request. Exit code is 143
-Container exited with a non-zero exit code 143
-
-20/06/08 23:13:19 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000000_2, Status : FAILED
-Error: Java heap space
-Container killed by the ApplicationMaster.
-Container killed on request. Exit code is 143
-Container exited with a non-zero exit code 143
-
-20/06/08 23:13:19 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000009_2, Status : FAILED
-Error: Java heap space
-Container killed by the ApplicationMaster.
-Container killed on request. Exit code is 143
-Container exited with a non-zero exit code 143
-
-20/06/08 23:13:20 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000016_2, Status : FAILED
-Error: Java heap space
-Container killed by the ApplicationMaster.
-Container killed on request. Exit code is 143
-Container exited with a non-zero exit code 143
-
-20/06/08 23:13:21 INFO mapreduce.Job: Task Id : attempt_1591625323270_0006_m_000008_2, Status : FAILED
-Error: Java heap space
-20/06/08 23:13:22 INFO mapreduce.Job:  map 100% reduce 100%
-20/06/08 23:13:24 INFO mapreduce.Job: Job job_1591625323270_0006 failed with state FAILED due to: Task failed task_1591625323270_0006_m_000001
+20/06/10 00:38:51 INFO mapreduce.Job:  map 100% reduce 100%
+20/06/10 00:38:52 INFO mapreduce.Job: Job job_1591717024225_0002 failed with state FAILED due to: Task failed task_1591717024225_0002_m_000004
 Job failed as tasks failed. failedMaps:1 failedReduces:0
 
-20/06/08 23:13:24 INFO mapreduce.Job: Counters: 17
+20/06/10 00:38:52 INFO mapreduce.Job: Counters: 17
 	Job Counters 
-		Failed map tasks=53
-		Killed map tasks=89
+		Failed map tasks=51
+		Killed map tasks=88
 		Killed reduce tasks=1
-		Launched map tasks=65
-		Other local map tasks=44
-		Data-local map tasks=21
-		Total time spent by all maps in occupied slots (ms)=455270
+		Launched map tasks=63
+		Other local map tasks=43
+		Data-local map tasks=20
+		Total time spent by all maps in occupied slots (ms)=392277
 		Total time spent by all reduces in occupied slots (ms)=0
-		Total time spent by all map tasks (ms)=455270
+		Total time spent by all map tasks (ms)=392277
 		Total time spent by all reduce tasks (ms)=0
-		Total vcore-milliseconds taken by all map tasks=455270
+		Total vcore-milliseconds taken by all map tasks=392277
 		Total vcore-milliseconds taken by all reduce tasks=0
-		Total megabyte-milliseconds taken by all map tasks=466196480
+		Total megabyte-milliseconds taken by all map tasks=401691648
 		Total megabyte-milliseconds taken by all reduce tasks=0
 	Map-Reduce Framework
 		CPU time spent (ms)=0
 		Physical memory (bytes) snapshot=0
 		Virtual memory (bytes) snapshot=0
-20/06/08 23:13:24 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
-20/06/08 23:13:25 INFO input.FileInputFormat: Total input paths to process : 0
-20/06/08 23:13:25 INFO mapreduce.JobSubmitter: number of splits:0
-20/06/08 23:13:26 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591625323270_0007
-20/06/08 23:13:26 INFO impl.YarnClientImpl: Submitted application application_1591625323270_0007
-20/06/08 23:13:26 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591625323270_0007/
-20/06/08 23:13:26 INFO mapreduce.Job: Running job: job_1591625323270_0007
-20/06/08 23:13:34 INFO mapreduce.Job: Job job_1591625323270_0007 running in uber mode : false
-20/06/08 23:13:34 INFO mapreduce.Job:  map 0% reduce 0%
-20/06/08 23:13:39 INFO mapreduce.Job:  map 0% reduce 100%
-20/06/08 23:13:39 INFO mapreduce.Job: Job job_1591625323270_0007 completed successfully
-20/06/08 23:13:39 INFO mapreduce.Job: Counters: 38
+20/06/10 00:38:52 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+20/06/10 00:38:53 INFO input.FileInputFormat: Total input paths to process : 0
+20/06/10 00:38:53 INFO mapreduce.JobSubmitter: number of splits:0
+20/06/10 00:38:54 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591717024225_0003
+20/06/10 00:38:54 INFO impl.YarnClientImpl: Submitted application application_1591717024225_0003
+20/06/10 00:38:54 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591717024225_0003/
+20/06/10 00:38:54 INFO mapreduce.Job: Running job: job_1591717024225_0003
+20/06/10 00:39:03 INFO mapreduce.Job: Job job_1591717024225_0003 running in uber mode : false
+20/06/10 00:39:03 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/10 00:39:07 INFO mapreduce.Job:  map 0% reduce 100%
+20/06/10 00:39:08 INFO mapreduce.Job: Job job_1591717024225_0003 completed successfully
+20/06/10 00:39:08 INFO mapreduce.Job: Counters: 38
 	File System Counters
 		FILE: Number of bytes read=0
 		FILE: Number of bytes written=122624
@@ -271,10 +249,10 @@ Job failed as tasks failed. failedMaps:1 failedReduces:0
 	Job Counters 
 		Launched reduce tasks=1
 		Total time spent by all maps in occupied slots (ms)=0
-		Total time spent by all reduces in occupied slots (ms)=1568
-		Total time spent by all reduce tasks (ms)=1568
-		Total vcore-milliseconds taken by all reduce tasks=1568
-		Total megabyte-milliseconds taken by all reduce tasks=1605632
+		Total time spent by all reduces in occupied slots (ms)=1543
+		Total time spent by all reduce tasks (ms)=1543
+		Total vcore-milliseconds taken by all reduce tasks=1543
+		Total megabyte-milliseconds taken by all reduce tasks=1580032
 	Map-Reduce Framework
 		Combine input records=0
 		Combine output records=0
@@ -286,11 +264,11 @@ Job failed as tasks failed. failedMaps:1 failedReduces:0
 		Shuffled Maps =0
 		Failed Shuffles=0
 		Merged Map outputs=0
-		GC time elapsed (ms)=41
-		CPU time spent (ms)=230
-		Physical memory (bytes) snapshot=161366016
-		Virtual memory (bytes) snapshot=2110570496
-		Total committed heap usage (bytes)=113246208
+		GC time elapsed (ms)=43
+		CPU time spent (ms)=220
+		Physical memory (bytes) snapshot=163483648
+		Virtual memory (bytes) snapshot=2117767168
+		Total committed heap usage (bytes)=114294784
 	Shuffle Errors
 		BAD_ID=0
 		CONNECTION=0

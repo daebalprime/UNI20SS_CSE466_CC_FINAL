@@ -1,59 +1,29 @@
-20/06/09 05:36:06 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
-20/06/09 05:36:07 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
-20/06/09 05:36:07 INFO input.FileInputFormat: Total input paths to process : 10
-20/06/09 05:36:08 INFO mapreduce.JobSubmitter: number of splits:80
-20/06/09 05:36:08 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591646884095_0010
-20/06/09 05:36:08 INFO impl.YarnClientImpl: Submitted application application_1591646884095_0010
-20/06/09 05:36:08 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591646884095_0010/
-20/06/09 05:36:08 INFO mapreduce.Job: Running job: job_1591646884095_0010
-20/06/09 05:36:13 INFO mapreduce.Job: Job job_1591646884095_0010 running in uber mode : false
-20/06/09 05:36:13 INFO mapreduce.Job:  map 0% reduce 0%
-20/06/09 05:36:25 INFO mapreduce.Job:  map 1% reduce 0%
-20/06/09 05:36:26 INFO mapreduce.Job:  map 5% reduce 0%
-20/06/09 05:36:27 INFO mapreduce.Job:  map 8% reduce 0%
-20/06/09 05:36:32 INFO mapreduce.Job:  map 9% reduce 0%
-20/06/09 05:36:35 INFO mapreduce.Job:  map 13% reduce 0%
-20/06/09 05:36:36 INFO mapreduce.Job:  map 15% reduce 0%
-20/06/09 05:36:40 INFO mapreduce.Job:  map 16% reduce 0%
-20/06/09 05:36:43 INFO mapreduce.Job:  map 17% reduce 0%
-20/06/09 05:36:44 INFO mapreduce.Job:  map 20% reduce 0%
-20/06/09 05:36:46 INFO mapreduce.Job:  map 22% reduce 0%
-20/06/09 05:36:50 INFO mapreduce.Job:  map 24% reduce 0%
-20/06/09 05:36:51 INFO mapreduce.Job:  map 25% reduce 0%
-20/06/09 05:36:53 INFO mapreduce.Job:  map 26% reduce 0%
-20/06/09 05:36:54 INFO mapreduce.Job:  map 28% reduce 0%
-20/06/09 05:36:55 INFO mapreduce.Job:  map 29% reduce 0%
-20/06/09 05:36:58 INFO mapreduce.Job:  map 29% reduce 2%
-20/06/09 05:36:59 INFO mapreduce.Job:  map 30% reduce 2%
-20/06/09 05:37:01 INFO mapreduce.Job:  map 31% reduce 2%
-20/06/09 05:37:02 INFO mapreduce.Job:  map 32% reduce 2%
-20/06/09 05:37:03 INFO mapreduce.Job:  map 34% reduce 2%
-20/06/09 05:37:04 INFO mapreduce.Job:  map 35% reduce 3%
-20/06/09 05:37:07 INFO mapreduce.Job:  map 35% reduce 4%
-20/06/09 05:37:08 INFO mapreduce.Job:  map 36% reduce 4%
-20/06/09 05:37:09 INFO mapreduce.Job:  map 38% reduce 4%
-20/06/09 05:37:12 INFO mapreduce.Job:  map 41% reduce 4%
-20/06/09 05:37:13 INFO mapreduce.Job:  map 41% reduce 5%
-20/06/09 05:37:15 INFO mapreduce.Job:  map 43% reduce 5%
-20/06/09 05:37:18 INFO mapreduce.Job:  map 43% reduce 6%
-20/06/09 05:37:20 INFO mapreduce.Job:  map 45% reduce 6%
-20/06/09 05:37:21 INFO mapreduce.Job:  map 46% reduce 7%
-20/06/09 05:37:24 INFO mapreduce.Job:  map 47% reduce 8%
-20/06/09 05:37:29 INFO mapreduce.Job:  map 50% reduce 8%
-20/06/09 05:37:30 INFO mapreduce.Job:  map 51% reduce 9%
-20/06/09 05:37:31 INFO mapreduce.Job:  map 52% reduce 9%
-20/06/09 05:37:33 INFO mapreduce.Job:  map 52% reduce 10%
-20/06/09 05:37:38 INFO mapreduce.Job:  map 55% reduce 10%
-20/06/09 05:37:39 INFO mapreduce.Job:  map 55% reduce 11%
-20/06/09 05:37:41 INFO mapreduce.Job:  map 55% reduce 12%
-20/06/09 05:37:42 INFO mapreduce.Job:  map 56% reduce 12%
-20/06/09 05:37:44 INFO mapreduce.Job:  map 56% reduce 13%
-20/06/09 05:37:48 INFO mapreduce.Job:  map 57% reduce 14%
-20/06/09 05:37:49 INFO mapreduce.Job:  map 58% reduce 14%
-20/06/09 05:37:52 INFO mapreduce.Job:  map 59% reduce 14%
-20/06/09 05:37:53 INFO mapreduce.Job:  map 60% reduce 14%
-20/06/09 05:37:54 INFO mapreduce.Job:  map 60% reduce 15%
-20/06/09 05:37:57 INFO mapreduce.Job:  map 60% reduce 16%
-20/06/09 05:38:00 INFO mapreduce.Job:  map 61% reduce 16%
-20/06/09 05:38:02 INFO mapreduce.Job:  map 62% reduce 17%
-20/06/09 05:38:04 INFO mapreduce.Job:  map 63% reduce 17%
+20/06/10 11:06:49 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+20/06/10 11:06:50 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://master:9000/user/root/random_sorted already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:146)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:266)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:139)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1287)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1758)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1308)
+	at org.apache.hadoop.examples.Sort.run(Sort.java:180)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.hadoop.examples.Sort.main(Sort.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:71)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:144)
+	at org.apache.hadoop.examples.ExampleDriver.main(ExampleDriver.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
