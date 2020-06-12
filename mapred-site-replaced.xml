@@ -24,11 +24,11 @@
     <value>yarn</value>
   </property>
   <property>
-    <name>mapreduce.jobtracker.maxreducememory.mb</name>
+    <name>mapreduce.reduce.memory.mb</name>
     <value>1024</value>
   </property>
   <property>
-    <name>mapreduce.jobtracker.maxmapmemory.mb</name>
+    <name>mapreduce.map.memory.mb</name>
     <value>1024</value>
   </property>
   <property>
@@ -52,7 +52,7 @@
   <!-- 2 -->
   <property>
     <name>mapreduce.tasktracker.reduce.tasks.maximum</name>
-    <value>2</value>
+    <value>4</value>
   </property>
   <!-- 2 -->
 

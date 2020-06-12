@@ -1,0 +1,10 @@
+*.swp
+run-tasks2.sh
+run-tasks.sh2
+out
+test.sh
+make.log
+make.err
+dataset
+dummyset
+Makefile2

@@ -34,3 +34,18 @@
 ### Quick links
 - ***[HDFS](http://114.70.14.158:50070/dfshealth.html#tab-overview)
 - ***[Hadoop Status](http://114.70.14.158:50070/dfshealth.html#tab-overview)
+
+### TODO
+
+# Workflow
+1. configuration 별로 하둡 세팅하고, 어플리케이션 실행해서 로그파일[1] 생성
+
+[1] 로그파일 생성 : 실행한 어플리케이션의 아이디를 확인하고, xml파일 얻기.
+
+2. 로그파일 파싱 -> json으로 얻기[2] -> application 3번 평균[3] -> configure 별로 application 결린 시간 비교[4].
+[2] xml, output 파싱
+
+
+3. 이걸 기반으로 레포트
+
+

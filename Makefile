@@ -1,7 +1,9 @@
 #!/bin/bash
 
 VAR_REPLICATION_FACTOR = 1 
-VAR_BLOCKSIZE = 128m
+# FIXME BLOCKSIZE value should be pure integer not including M,G,k as postfix
+# VAR_BLOCKSIZE = 128m
+VAR_BLOCKSIZE = 134217728
 VAR_MEMORY_REDUCE = 1024
 VAR_MEMORY_MAP = 1024
 VAR_CPU_VCORES_REDUCE = 1
@@ -16,9 +18,10 @@ VAR_BUFFER_SIZE = 4096
 # VAR_REPLICATION_FACTOR = 1 
 VRF = 1 2 3
 # VAR_BLOCKSIZE = 128m
-VBS = 32m 128m 512m
+VB = 67108864 134217728 268435456
 # VAR_MEMORY_REDUCE = 1024
-VMR = 512 1024 2048
+# VMR = 512 1024 2048
+VMR = 2048
 # VAR_MEMORY_MAP = 1024
 VMM = 512 1024 2048
 # VAR_CPU_VCORES_REDUCE = 1
@@ -44,12 +47,15 @@ VBS = 2048 4096 8192
 
 PARAMETER_ID = ""
 
-CONFIG_DIR = /root/src/hadoop-2.7.6/etc/hadoop/
+CONFIG_DIR = /root/src/hadoop-2.7.6/etc/hadoop
 
 
 test: 
-	$(foreach var,$(VRF), make all VAR_REPLICATION_FACTOR=$(var) PARAMETER_ID=VAR_REPLICATION_FACTOR_$(var);)
-	$(foreach var,$(VBS), make all VAR_BLOCKSIZE=$(var) PARAMETER_ID=VAR_BLOCKSIZE_$(var);)
+	# TODO BLOCKSIZE REPLICATION sort, grep 돌리
+	## due to storage shortage, only 2 replication factor is available
+	#$(foreach var,$(VRF), make all VAR_REPLICATION_FACTOR=$(var) PARAMETER_ID=VAR_REPLICATION_FACTOR_$(var);)
+
+	#$(foreach var,$(VB), make all VAR_BLOCKSIZE=$(var) PARAMETER_ID=VAR_BLOCKSIZE_$(var);)
 	$(foreach var,$(VMR), make all VAR_MEMORY_REDUCE=$(var) PARAMETER_ID=VAR_MEMORY_REDUCE_$(var);)
 	$(foreach var,$(VMM), make all VAR_MEMORY_MAP=$(var) PARAMETER_ID=VAR_MEMORY_MAP_$(var);)
 	$(foreach var,$(VCVR),make all VAR_CPU_VCORES_REDUCE=$(var) PARAMETER_ID=VAR_CPU_VCORES_REDUCE_$(var);)
@@ -76,10 +82,8 @@ all: dummy
 	# cat ./mapred-site-replaced.xml
 	./scp.sh $(CONFIG_DIR)/hdfs-site.xml $(CONFIG_DIR)/mapred-site.xml $(CONFIG_DIR)/core-site.xml
 	./restart-all.sh
-	./run-tasks.sh $(PARAMETER_ID)
-	cp $(CONFIG_DIR)/hdfs-site.xml ./$(PARAMETER_ID)/hdfs-site.xml
-	cp $(CONFIG_DIR)/mapred-site.xml ./$(PARAMETER_ID)/mapred-site.xml
-	cp $(CONFIG_DIR)/core-site.xml ./$(PARAMETER_ID)/core-site.xml
+#	./run-tasks.sh $(PARAMETER_ID)
+	./run-tasks2.sh $(PARAMETER_ID)
 
 
 # example: make all VAR_BLOCKSIZE=1
