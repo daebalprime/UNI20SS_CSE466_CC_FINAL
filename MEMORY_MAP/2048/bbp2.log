@@ -5,5 +5,5 @@ Number of Digits = 100000
 Number of Maps   = 20
 
 Starting Job ...
-Duration is 261.58 seconds.
+Duration is 289.045 seconds.
 Output file: hdfs://master:9000/user/root/bbp_dir/pi_1_100000.hex

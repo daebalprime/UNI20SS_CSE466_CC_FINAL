@@ -1,78 +1,82 @@
-20/06/08 01:26:39 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #0: workload=249995980, offset=0, size=22360
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #1: workload=250058520, offset=22360, size=9264
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #2: workload=249893856, offset=31624, size=7104
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #3: workload=250013204, offset=38728, size=5992
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #4: workload=250063440, offset=44720, size=5280
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #5: workload=249988378, offset=50000, size=4772
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #6: workload=249969002, offset=54772, size=4388
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #7: workload=249951010, offset=59160, size=4084
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #8: workload=249963350, offset=63244, size=3836
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #9: workload=250232088, offset=67080, size=3632
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #10: workload=249761052, offset=70712, size=3448
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #11: workload=250174650, offset=74160, size=3300
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #12: workload=250090470, offset=77460, size=3164
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #13: workload=249719280, offset=80624, size=3040
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #14: workload=250295430, offset=83664, size=2940
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #15: workload=249989580, offset=86604, size=2840
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #16: workload=249938016, offset=89444, size=2752
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #17: workload=249918840, offset=92196, size=2672
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #18: workload=250038100, offset=94868, size=2600
-20/06/08 01:26:39 INFO examples.BaileyBorweinPlouffe: Map #19: workload=249995754, offset=97468, size=2532
-20/06/08 01:26:40 INFO mapreduce.JobSubmitter: number of splits:20
-20/06/08 01:26:40 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1591544408336_0016
-20/06/08 01:26:40 INFO impl.YarnClientImpl: Submitted application application_1591544408336_0016
-20/06/08 01:26:40 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1591544408336_0016/
-20/06/08 01:26:40 INFO mapreduce.Job: Running job: job_1591544408336_0016
-20/06/08 01:26:45 INFO mapreduce.Job: Job job_1591544408336_0016 running in uber mode : false
-20/06/08 01:26:45 INFO mapreduce.Job:  map 0% reduce 0%
-20/06/08 01:26:55 INFO mapreduce.Job:  map 7% reduce 0%
-20/06/08 01:26:56 INFO mapreduce.Job:  map 13% reduce 0%
-20/06/08 01:26:58 INFO mapreduce.Job:  map 23% reduce 0%
-20/06/08 01:27:01 INFO mapreduce.Job:  map 30% reduce 0%
-20/06/08 01:27:02 INFO mapreduce.Job:  map 37% reduce 0%
-20/06/08 01:27:03 INFO mapreduce.Job:  map 40% reduce 0%
-20/06/08 01:27:05 INFO mapreduce.Job:  map 43% reduce 0%
-20/06/08 01:27:06 INFO mapreduce.Job:  map 47% reduce 0%
-20/06/08 01:28:44 INFO mapreduce.Job:  map 48% reduce 0%
-20/06/08 01:28:54 INFO mapreduce.Job:  map 50% reduce 0%
-20/06/08 01:28:56 INFO mapreduce.Job:  map 53% reduce 0%
-20/06/08 01:29:00 INFO mapreduce.Job:  map 55% reduce 0%
-20/06/08 01:29:03 INFO mapreduce.Job:  map 57% reduce 0%
-20/06/08 01:29:05 INFO mapreduce.Job:  map 60% reduce 0%
-20/06/08 01:29:06 INFO mapreduce.Job:  map 63% reduce 0%
-20/06/08 01:29:11 INFO mapreduce.Job:  map 63% reduce 10%
-20/06/08 01:29:15 INFO mapreduce.Job:  map 67% reduce 10%
-20/06/08 01:29:16 INFO mapreduce.Job:  map 72% reduce 10%
-20/06/08 01:29:17 INFO mapreduce.Job:  map 75% reduce 10%
-20/06/08 01:29:20 INFO mapreduce.Job:  map 75% reduce 12%
-20/06/08 01:29:29 INFO mapreduce.Job:  map 80% reduce 12%
-20/06/08 01:29:33 INFO mapreduce.Job:  map 80% reduce 13%
-20/06/08 01:29:37 INFO mapreduce.Job:  map 82% reduce 13%
-20/06/08 01:29:38 INFO mapreduce.Job:  map 82% reduce 15%
-20/06/08 01:29:39 INFO mapreduce.Job:  map 83% reduce 15%
-20/06/08 01:29:41 INFO mapreduce.Job:  map 83% reduce 17%
-20/06/08 01:29:42 INFO mapreduce.Job:  map 85% reduce 17%
-20/06/08 01:29:43 INFO mapreduce.Job:  map 87% reduce 17%
-20/06/08 01:29:44 INFO mapreduce.Job:  map 87% reduce 20%
-20/06/08 01:29:47 INFO mapreduce.Job:  map 88% reduce 20%
-20/06/08 01:29:49 INFO mapreduce.Job:  map 90% reduce 20%
-20/06/08 01:29:50 INFO mapreduce.Job:  map 90% reduce 23%
-20/06/08 01:30:40 INFO mapreduce.Job:  map 92% reduce 23%
-20/06/08 01:30:43 INFO mapreduce.Job:  map 92% reduce 25%
-20/06/08 01:30:46 INFO mapreduce.Job:  map 93% reduce 25%
-20/06/08 01:30:48 INFO mapreduce.Job:  map 93% reduce 27%
-20/06/08 01:30:51 INFO mapreduce.Job:  map 95% reduce 27%
-20/06/08 01:30:52 INFO mapreduce.Job:  map 97% reduce 27%
-20/06/08 01:30:54 INFO mapreduce.Job:  map 98% reduce 30%
-20/06/08 01:30:57 INFO mapreduce.Job:  map 98% reduce 32%
-20/06/08 01:31:00 INFO mapreduce.Job:  map 100% reduce 32%
-20/06/08 01:31:03 INFO mapreduce.Job:  map 100% reduce 100%
-20/06/08 01:31:03 INFO mapreduce.Job: Job job_1591544408336_0016 completed successfully
-20/06/08 01:31:03 INFO mapreduce.Job: Counters: 49
+20/06/13 13:00:01 INFO client.RMProxy: Connecting to ResourceManager at master/10.51.17.95:8032
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #0: workload=249995980, offset=0, size=22360
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #1: workload=250058520, offset=22360, size=9264
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #2: workload=249893856, offset=31624, size=7104
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #3: workload=250013204, offset=38728, size=5992
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #4: workload=250063440, offset=44720, size=5280
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #5: workload=249988378, offset=50000, size=4772
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #6: workload=249969002, offset=54772, size=4388
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #7: workload=249951010, offset=59160, size=4084
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #8: workload=249963350, offset=63244, size=3836
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #9: workload=250232088, offset=67080, size=3632
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #10: workload=249761052, offset=70712, size=3448
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #11: workload=250174650, offset=74160, size=3300
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #12: workload=250090470, offset=77460, size=3164
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #13: workload=249719280, offset=80624, size=3040
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #14: workload=250295430, offset=83664, size=2940
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #15: workload=249989580, offset=86604, size=2840
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #16: workload=249938016, offset=89444, size=2752
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #17: workload=249918840, offset=92196, size=2672
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #18: workload=250038100, offset=94868, size=2600
+20/06/13 13:00:01 INFO examples.BaileyBorweinPlouffe: Map #19: workload=249995754, offset=97468, size=2532
+20/06/13 13:00:02 INFO mapreduce.JobSubmitter: number of splits:20
+20/06/13 13:00:02 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1592017101862_0018
+20/06/13 13:00:02 INFO impl.YarnClientImpl: Submitted application application_1592017101862_0018
+20/06/13 13:00:02 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1592017101862_0018/
+20/06/13 13:00:02 INFO mapreduce.Job: Running job: job_1592017101862_0018
+20/06/13 13:00:07 INFO mapreduce.Job: Job job_1592017101862_0018 running in uber mode : false
+20/06/13 13:00:07 INFO mapreduce.Job:  map 0% reduce 0%
+20/06/13 13:00:18 INFO mapreduce.Job:  map 7% reduce 0%
+20/06/13 13:00:19 INFO mapreduce.Job:  map 13% reduce 0%
+20/06/13 13:00:21 INFO mapreduce.Job:  map 20% reduce 0%
+20/06/13 13:00:22 INFO mapreduce.Job:  map 23% reduce 0%
+20/06/13 13:01:07 INFO mapreduce.Job:  map 25% reduce 0%
+20/06/13 13:01:13 INFO mapreduce.Job:  map 27% reduce 0%
+20/06/13 13:01:16 INFO mapreduce.Job:  map 30% reduce 0%
+20/06/13 13:01:18 INFO mapreduce.Job:  map 32% reduce 0%
+20/06/13 13:01:22 INFO mapreduce.Job:  map 35% reduce 0%
+20/06/13 13:01:26 INFO mapreduce.Job:  map 35% reduce 5%
+20/06/13 13:01:32 INFO mapreduce.Job:  map 37% reduce 5%
+20/06/13 13:01:35 INFO mapreduce.Job:  map 37% reduce 7%
+20/06/13 13:01:36 INFO mapreduce.Job:  map 38% reduce 7%
+20/06/13 13:01:37 INFO mapreduce.Job:  map 40% reduce 7%
+20/06/13 13:01:38 INFO mapreduce.Job:  map 42% reduce 10%
+20/06/13 13:01:41 INFO mapreduce.Job:  map 42% reduce 12%
+20/06/13 13:01:43 INFO mapreduce.Job:  map 45% reduce 12%
+20/06/13 13:01:45 INFO mapreduce.Job:  map 48% reduce 12%
+20/06/13 13:01:47 INFO mapreduce.Job:  map 52% reduce 12%
+20/06/13 13:01:49 INFO mapreduce.Job:  map 55% reduce 12%
+20/06/13 13:02:14 INFO mapreduce.Job:  map 57% reduce 12%
+20/06/13 13:02:16 INFO mapreduce.Job:  map 57% reduce 13%
+20/06/13 13:02:22 INFO mapreduce.Job:  map 62% reduce 13%
+20/06/13 13:02:24 INFO mapreduce.Job:  map 62% reduce 15%
+20/06/13 13:02:30 INFO mapreduce.Job:  map 65% reduce 15%
+20/06/13 13:03:03 INFO mapreduce.Job:  map 67% reduce 17%
+20/06/13 13:03:05 INFO mapreduce.Job:  map 68% reduce 17%
+20/06/13 13:03:06 INFO mapreduce.Job:  map 68% reduce 18%
+20/06/13 13:03:10 INFO mapreduce.Job:  map 70% reduce 18%
+20/06/13 13:03:12 INFO mapreduce.Job:  map 72% reduce 22%
+20/06/13 13:03:13 INFO mapreduce.Job:  map 75% reduce 22%
+20/06/13 13:03:16 INFO mapreduce.Job:  map 78% reduce 22%
+20/06/13 13:03:20 INFO mapreduce.Job:  map 82% reduce 22%
+20/06/13 13:03:21 INFO mapreduce.Job:  map 83% reduce 23%
+20/06/13 13:03:23 INFO mapreduce.Job:  map 87% reduce 23%
+20/06/13 13:03:29 INFO mapreduce.Job:  map 92% reduce 23%
+20/06/13 13:03:30 INFO mapreduce.Job:  map 92% reduce 25%
+20/06/13 13:04:29 INFO mapreduce.Job:  map 93% reduce 25%
+20/06/13 13:04:30 INFO mapreduce.Job:  map 93% reduce 27%
+20/06/13 13:04:32 INFO mapreduce.Job:  map 95% reduce 27%
+20/06/13 13:04:33 INFO mapreduce.Job:  map 95% reduce 28%
+20/06/13 13:04:35 INFO mapreduce.Job:  map 97% reduce 28%
+20/06/13 13:04:36 INFO mapreduce.Job:  map 97% reduce 30%
+20/06/13 13:04:42 INFO mapreduce.Job:  map 98% reduce 30%
+20/06/13 13:04:43 INFO mapreduce.Job:  map 100% reduce 30%
+20/06/13 13:04:45 INFO mapreduce.Job:  map 100% reduce 100%
+20/06/13 13:04:46 INFO mapreduce.Job: Job job_1592017101862_0018 completed successfully
+20/06/13 13:04:46 INFO mapreduce.Job: Counters: 49
 	File System Counters
 		FILE: Number of bytes read=50326
-		FILE: Number of bytes written=2699114
+		FILE: Number of bytes written=2692793
 		FILE: Number of read operations=0
 		FILE: Number of large read operations=0
 		FILE: Number of write operations=0
@@ -85,14 +89,14 @@
 		Launched map tasks=20
 		Launched reduce tasks=1
 		Other local map tasks=20
-		Total time spent by all maps in occupied slots (ms)=2769620
-		Total time spent by all reduces in occupied slots (ms)=122172
-		Total time spent by all map tasks (ms)=2769620
-		Total time spent by all reduce tasks (ms)=122172
-		Total vcore-milliseconds taken by all map tasks=2769620
-		Total vcore-milliseconds taken by all reduce tasks=122172
-		Total megabyte-milliseconds taken by all map tasks=2836090880
-		Total megabyte-milliseconds taken by all reduce tasks=125104128
+		Total time spent by all maps in occupied slots (ms)=3171462
+		Total time spent by all reduces in occupied slots (ms)=207181
+		Total time spent by all map tasks (ms)=1585731
+		Total time spent by all reduce tasks (ms)=207181
+		Total vcore-milliseconds taken by all map tasks=1585731
+		Total vcore-milliseconds taken by all reduce tasks=207181
+		Total megabyte-milliseconds taken by all map tasks=3247577088
+		Total megabyte-milliseconds taken by all reduce tasks=212153344
 	Map-Reduce Framework
 		Map input records=20
 		Map output records=20
@@ -109,11 +113,11 @@
 		Shuffled Maps =20
 		Failed Shuffles=0
 		Merged Map outputs=20
-		GC time elapsed (ms)=3345
-		CPU time spent (ms)=1270730
-		Physical memory (bytes) snapshot=5463433216
-		Virtual memory (bytes) snapshot=44231487488
-		Total committed heap usage (bytes)=4211081216
+		GC time elapsed (ms)=2522
+		CPU time spent (ms)=1278520
+		Physical memory (bytes) snapshot=5467717632
+		Virtual memory (bytes) snapshot=44246925312
+		Total committed heap usage (bytes)=4212129792
 	Shuffle Errors
 		BAD_ID=0
 		CONNECTION=0
