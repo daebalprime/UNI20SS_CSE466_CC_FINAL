@@ -1,4 +1,4 @@
 Running on 2 nodes to sort from hdfs://master:9000/user/root/random into hdfs://master:9000/user/root/random_sorted with 3 reduces.
-Job started: Sat Jun 13 10:29:01 KST 2020
-Job ended: Sat Jun 13 10:33:38 KST 2020
-The job took 276 seconds.
+Job started: Sun Jun 14 06:27:06 KST 2020
+Job ended: Sun Jun 14 06:31:06 KST 2020
+The job took 240 seconds.
